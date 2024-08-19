@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="recursos/imagens/bola-futebol.png">
+    <title>Contador do Biel</title>
+</head>
+<body>
+
+    <div class="container dflex-col">
+
+        <!-- Conteúdo principal (pontuação) -->
+        <div class="parte-superior dflex-col">
+
+            <!-- Cabeçalho -->
+            <div class="cabecalho-container dflex-row">
+
+                <!-- Ícone -->
+                 <span>
+                    <img class="cabecalho-icone" src="recursos/imagens/bola-futebol.png" alt="Ícone de bola de futebol">
+                </span>
+
+                <!-- Título -->
+                <h1 class="titulo-principal">Contador do Biel</h1>
+            
+                <!-- Botão reiniciar -->
+                <div class="botao-reiniciar-container">
+                    <button
+                    class="botao-base botao-reiniciar"
+                    id="botao-reiniciar"
+                    onclick="reiniciarPlacar()">
+                        <span>&#x21bb;</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Botões e placar -->
+            <div class="placar-container">
+
+                <!-- Time da casa -->
+                <div class="pontuacao-container">
+                    <!-- Botões + e - -->
+                    <div class="pontuacao-botoes-container dflex-col">
+                        <button
+                            class="botao-base pontuacao-botoes dflex-col"
+                            id="botao-mais-casa"
+                            onclick="maisCasa()">
+                                +
+                        </button>
+                        <button
+                            class="botao-base pontuacao-botoes dflex-col"
+                            id="botao-menos-casa"
+                            onclick="menosCasa()">
+                                -
+                        </button>
+                    </div>
+                    <!-- Pontuação -->
+                    <div
+                        class="pontuacao-base pontuacao dflex-col"
+                        id="placar-casa">
+                            0
+                    </div>
+                    <!-- Nome do time -->
+                    <h1 class="pontuacao-nome-do-time">Casa</h1>
+                </div>
+
+                <h1 class="pontuacao-x"> X </h1>
+
+                <!-- Visitante -->
+                <div class="pontuacao-container pontuacao-container-espelhado">
+                    <!-- Pontuação -->
+                    <div
+                        class="pontuacao-base pontuacao-espelhado dflex-col"
+                        id="placar-visitante">
+                            0
+                    </div>
+                    <!-- Botões + e - -->
+                    <div class="pontuacao-botoes-container dflex-col">
+                        <button
+                            class="botao-base pontuacao-botoes dflex-col"
+                            id="botao-mais-visitante"
+                            onclick="maisVisitante()">
+                                +
+                            </button>
+                        <button
+                            class="botao-base pontuacao-botoes dflex-col"
+                            id="botao-menos-visitante"
+                            onclick="menosVisitante()">
+                                -
+                            </button>
+                    </div>
+                    <!-- Nome do time -->
+                    <h1 class="pontuacao-nome-do-time pontuacao-nome-do-time-espelhado">Visitante</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Espaço para salvamento dos placares -->
+         <div class="placares-salvos dflex-row">
+            <button
+                class="botao-base botao-salvar"
+                onclick="salvarPlacar()">Salvar</button>
+            <p
+                id="placares-salvos-elemento"
+                class="placares-salvos-elemento">
+            </p>
+         </div>
+
+        <!-- Rodapé -->
+        <div class="texto-rodape-container">
+            <p>De: Bruno | Para: Gabriel<br>Lembranças do Brasil - 2024</p>
+        </div>
+        
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>

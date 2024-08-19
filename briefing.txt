@@ -1,0 +1,19 @@
+Presente de despedida do Biel
+
+Gabriel é um colega da faculdade de TI e vai realizar o sonho de estudar na Europa.
+Ele irá mudar para a França em pouco tempo.
+Gabriel é um grande fã de esportes, dentre eles o basquete e o futebol.
+Pensando nisso, e baseado nos exercícios de um curso recente de programação, surgiu a ideia de desenvolver um contador de placar para os jogos de futebol na Europa.
+
+Produto: Um contador de placar de jogos de futebol
+
+Requisitos:
+[x] RF01: Possibilitar o usuário de contar quantos gols cada time faz durante a partida
+[x] RF02: Reiniciar a contagem de gols a qualquer momento
+[x] RF03: Possibilitar salvar o resultado do jogo
+[x] RF04: Conter o seguinte texto no rodapé: "De: Bruno | Para: Biel" [quebra de linha] "Lembranças do Brasil"
+[x] RF06: Conter um plano de fundo que remeta à jogos de futebol
+
+-----
+
+[] RFx1: Possibilitar escolher outras imagens de plano de fundo
