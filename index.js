@@ -68,7 +68,7 @@ function salvarPlacar() {
         // Exibir a data de salvamento
     let placarSalvo =
         counterCasa + " x " + counterVisitante + "\n" +
-        diaPartida +
+        // diaPartida +
         " | "
 
     // Exibição incremental dos conteúdos definidos salvos (acima)
