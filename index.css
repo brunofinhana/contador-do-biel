@@ -1,0 +1,259 @@
+@font-face {
+    /* font-family: "CursedTimer";
+    src: url("recursos/fontes/CursedTimer/CursedTimer.ttf"); */
+
+    font-family: "EraserRegular";
+    src: url("recursos/fontes/eraser-font/EraserRegular-DO1D.ttf");
+}
+@font-face {
+    font-family: "EraserDust";
+    src: url("recursos/fontes/eraser-font/EraserDust-p70d.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 1%;
+
+    font-family: monospace;
+    color: whitesmoke;
+
+    background-color: #4c8527;
+    background-image: url("recursos/imagens/campo-de-futebol-linhas-menor-opacidade.png");
+    background-size: contain;
+    background-position: center;
+    backdrop-filter: opacity(20%);
+}
+
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: black; */
+}
+
+.conteudo-principal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.placar-container {
+    width: 80vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+/* DEFINIÇÕES DE LAYOUT (DISPLAY) */
+
+/* Display: Flex */
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dflex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Títulos */
+
+.cabecalho-container {
+    min-width: 100vw;
+    
+    gap: 10%;
+    
+    font-family: "EraserRegular", monospace;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    /* text-transform: capitalize; */
+
+    /* background-color: #4c8527; */
+}
+
+.cabecalho-icone {
+    max-width: 50px;
+}
+
+/* .titulo-principal {
+    font-size: 4em;
+    line-height: 0%;
+
+    background-color: blue;
+} */
+
+/* PONTUAÇÃO */
+.pontuacao-container {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 15%;
+
+    /* margin: 50px;
+    padding: 10px; */
+
+    /* background-color: brown; */
+}
+
+.pontuacao-container-espelhado {
+    grid-template-columns: 2fr 1fr;
+}
+
+/* ----- */
+
+.botao-base {
+    /* border: 5px solid white;
+    border-radius: 50%; */
+    border: none;
+
+    background-color: transparent;
+
+    color: black;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+.botao-base:hover {
+    background-color: white;
+
+    transition: all .3s;
+
+    color: #4c8527;
+    /* font-size: clamp(3em,5vw, 5em); */
+
+}
+
+.botao-reiniciar {
+    width: 50px;
+    height: 50px; 
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    
+    font-family: monospace;
+    color: white;
+    font-size: 2em;
+
+    background-color: black;
+}
+
+.botao-salvar {
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: monospace;
+    color: white;
+    font-size: 1.2em;
+
+    background-color: black;
+}
+
+.pontuacao-botoes-container {
+    grid-row: span 2;
+    
+    /* background-color: cadetblue; */
+}
+
+.pontuacao-botoes {
+    width: 70px;
+    height: 70px;
+
+    margin: 15%;
+    padding: 60%;
+
+    border: none;
+
+    font-family: "EraserRegular", monospace;
+    color: black;
+    font-size: 6em;
+}
+
+/* ----- */
+
+.pontuacao-base {
+    width: 100%;
+    height: 100%;
+
+    font-family: "EraserRegular", monospace;
+    font-size: 10em;
+
+    /* border: 5px solid white; */
+    /* border-radius: 50px; */
+    /* background-color: darkgreen; */
+}
+
+.pontuacao-x {
+    margin: 5%;
+
+    font-family: "EraserRegular", monospace;
+    color: black;
+    font-size: 3em;
+}
+
+.pontuacao-nome-do-time {
+    /* Fazendo com o que o nome do time ocupe o mesmo espaço dos botões '+' / '-' e do valor do placar */
+    grid-column: 2;
+
+    font-family: "EraserDust";
+    font-size: clamp(3em, 1vw, 4em);
+    text-align: center;
+}
+
+.pontuacao-nome-do-time-espelhado {
+    /* Fazendo com o que o nome do time ocupe o mesmo espaço dos botões '+' / '-' e do valor do placar */
+    grid-column: 1;
+
+    /* text-align: center; */
+}
+
+/* SALVAMENTO DOS PLACARES */
+
+.placares-salvos{
+    width: 80vw;
+
+    gap: 5%;
+}
+
+.placares-salvos-elemento {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    word-break: keep-all;
+
+    /* background-color: aqua; */
+}
+
+/* RODAPÉ */
+
+.texto-rodape-container {
+    margin-bottom: 10px;
+
+    color: black;
+}
+
+.texto-rodape-container > p {
+    text-align: center;
+}
