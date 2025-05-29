@@ -1,3 +1,7 @@
+const menuBtn = document.getElementById("menu-btn")
+const menuBtnClose = document.getElementById("menu-btn-close")
+const menu = document.getElementById("menu-container")
+
 let botaoMaisCasa = document.getElementById("botao-mais-casa")
 let botaoMenosCasa = document.getElementById("botao-menos-casa")
 let placarCasa = document.getElementById("placar-casa")
@@ -11,6 +15,20 @@ let counterVisitante = 0
 
 let botaoSalvar = document.getElementById("botao-salvar")
 let placaresSalvosElemento = document.getElementById("placares-salvos-elemento")
+
+// Menu de contexto
+// Abrir menu
+function abrirMenu() {
+    menu.classList.add("menu-wrapper")
+    // menu.classList.add("menu-wrapper")
+    // menuBtn.style.display = "none"
+}
+
+// Fechar menu
+function ocultarMenu() {
+    menu.style.translate = "100% 0"
+    // menuBtn.style.display = "block"
+}
 
 // Funções Casa
 function maisCasa() {

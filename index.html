@@ -11,26 +11,67 @@
 
     <div class="container">
 
+        <!-- Menu - Janela -->
+        <!-- <div class="menu-container" id="menu-container">
+
+            <div class="menu">
+                <button class="menu-btn-close" id="menu-btn-close" onclick="ocultarMenu()">
+                    <span>x</span>
+                </button>
+
+                <h1 class="menu-titulo">Menu</h1>
+                <div class="menu-wrapper">
+        
+                    <button>
+                        <span>Reiniciar Placar &#x21bb;</span>
+                    </button>
+        
+                    <button>
+                        <span>Replay de Gols &#x27F3;</span>
+                    </button>
+                </div>
+            </div>
+           
+        </div> -->
+
+        <div class="menu-background">
+
+            <button class="menu-btn-close" id="menu-btn-close" onclick="ocultarMenu()">
+                <span>x</span>
+            </button>
+
+            <div class="menu-container">
+                <h1>Menu</h1>
+
+                <div class="menu-buttons-container">
+                    <button>Button 01</button>
+                    <button>Button 02</button>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+        </div>
+
         <!-- Cabeçalho -->
         <div class="cabecalho-container dflex-row">
 
-            <!-- Ícone -->
-                <span>
+            <!-- Ícone bola de futebol -->
+            <span>
                 <img class="cabecalho-icone" src="recursos/imagens/bola-futebol.png" alt="Ícone de bola de futebol">
             </span>
 
             <!-- Título -->
             <h1 class="titulo-principal">Contador do Biel</h1>
-        
-            <!-- Botão reiniciar -->
-            <div class="botao-reiniciar-container">
-                <button
-                class="botao-base botao-reiniciar"
-                id="botao-reiniciar"
-                onclick="reiniciarPlacar()">
-                    <span>&#x21bb;</span>
-                </button>
-            </div>
+
+            <!-- ATUALIZAÇÃO - Contador 2.0: Criando menu de contexto para comportar mais funcionalidades -->
+            <!-- Menu - Botão -->
+            <button
+                class="botao-base menu-btn"
+                id="menu-btn"
+                onclick="abrirMenu()">
+                    <span>&#8942</span>
+            </button>    
         </div>
 
         <!-- Conteúdo principal (pontuação) -->
